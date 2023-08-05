@@ -1,0 +1,41 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-auto-rows: minmax(150px, auto);
+  gap: 10px;
+  padding: 10px;
+  background-color: #2196f3;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.item1 {
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.item6 {
+  grid-column: 2 / 4;
+  grid-row: 3 / 5;
+}
+
+.item7 {
+  grid-row: 4 / 6;
+}
+
+.item8 {
+  grid-column: 2 / 4;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+}
